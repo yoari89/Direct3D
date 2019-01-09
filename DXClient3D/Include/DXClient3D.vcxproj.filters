@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{55ed0ef6-ebd1-40cb-ae77-7e8c3a1c2410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PreCompiled Header">
+      <UniqueIdentifier>{fd93900d-f690-41e4-be0c-c65b64c9cf44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PCHClient3D.cpp">
+      <Filter>PreCompiled Header</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PCHClient3D.h">
+      <Filter>PreCompiled Header</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DXClient3D.rc">
+      <Filter>Main</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Main</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

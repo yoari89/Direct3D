@@ -3,9 +3,74 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Client", "1. Client", "{16B46447-A406-4347-B4B3-3E21FB687E6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Editor", "2. Editor", "{0A533594-F4C9-4A98-8CCA-BBB27F3952C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Engine", "3. Engine", "{376716B1-BEB8-47A0-868B-2ACEEF7F86BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Math", "4. Math", "{623D4A19-BAA1-4AA0-939D-637ED96152B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Nvidia PhysX", "5. Nvidia PhysX", "{0E0561AD-451F-4507-8799-F58EC307CAD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Batch File", "Batch File", "{0F89485C-3DD2-48F3-8866-BF738670A3A2}"
+	ProjectSection(SolutionItems) = preProject
+		DXEngineCopy.bat = DXEngineCopy.bat
+		DXMathCopy.bat = DXMathCopy.bat
+		exclude.txt = exclude.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXEngine", "DXEngine\Inc\DXEngine.vcxproj", "{44A8C31F-7201-450D-905C-8248C0570068}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXClient3D", "DXClient3D\Inc\DXClient3D.vcxproj", "{A54BD3BB-860C-48A3-9D91-0B57E5108A78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Attribue Help", "Project Attribue Help", "{3CE82AFC-4041-4AFB-B2C3-70658939D570}"
+	ProjectSection(SolutionItems) = preProject
+		프로젝트 속성 설정.txt = 프로젝트 속성 설정.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXMath", "DXMath\Include\DXMath.vcxproj", "{BA33E69F-84B5-4CAF-B81F-327C951FAD79}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44A8C31F-7201-450D-905C-8248C0570068}.Debug|x64.ActiveCfg = Debug|x64
+		{44A8C31F-7201-450D-905C-8248C0570068}.Debug|x64.Build.0 = Debug|x64
+		{44A8C31F-7201-450D-905C-8248C0570068}.Debug|x86.ActiveCfg = Debug|Win32
+		{44A8C31F-7201-450D-905C-8248C0570068}.Debug|x86.Build.0 = Debug|Win32
+		{44A8C31F-7201-450D-905C-8248C0570068}.Release|x64.ActiveCfg = Release|x64
+		{44A8C31F-7201-450D-905C-8248C0570068}.Release|x64.Build.0 = Release|x64
+		{44A8C31F-7201-450D-905C-8248C0570068}.Release|x86.ActiveCfg = Release|Win32
+		{44A8C31F-7201-450D-905C-8248C0570068}.Release|x86.Build.0 = Release|Win32
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Debug|x64.ActiveCfg = Debug|x64
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Debug|x64.Build.0 = Debug|x64
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Debug|x86.ActiveCfg = Debug|Win32
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Debug|x86.Build.0 = Debug|Win32
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Release|x64.ActiveCfg = Release|x64
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Release|x64.Build.0 = Release|x64
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Release|x86.ActiveCfg = Release|Win32
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78}.Release|x86.Build.0 = Release|Win32
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Debug|x64.ActiveCfg = Debug|x64
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Debug|x64.Build.0 = Debug|x64
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Debug|x86.ActiveCfg = Debug|Win32
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Debug|x86.Build.0 = Debug|Win32
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Release|x64.ActiveCfg = Release|x64
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Release|x64.Build.0 = Release|x64
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Release|x86.ActiveCfg = Release|Win32
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44A8C31F-7201-450D-905C-8248C0570068} = {376716B1-BEB8-47A0-868B-2ACEEF7F86BF}
+		{A54BD3BB-860C-48A3-9D91-0B57E5108A78} = {16B46447-A406-4347-B4B3-3E21FB687E6E}
+		{BA33E69F-84B5-4CAF-B81F-327C951FAD79} = {623D4A19-BAA1-4AA0-939D-637ED96152B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41FAC8EC-ADE2-478F-9D9C-66ACFC31A5A2}

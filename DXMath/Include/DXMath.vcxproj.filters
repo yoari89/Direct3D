@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PreCompiled Header">
+      <UniqueIdentifier>{3c1fe4bf-4cbd-4afc-ad35-058fd7d7fe77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{d52accbd-ec9a-4d88-886e-ac40807b1a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{f18e93c2-be2d-4774-9bf0-37b17006ad95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4d5ffc19-b297-4127-b183-a3537e312316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{776be814-39a4-4a4d-adfd-bef141bb6868}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PCHMath.h">
+      <Filter>PreCompiled Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\PreProcessor.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineMacro.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PCHMath.cpp">
+      <Filter>PreCompiled Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonMath.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
